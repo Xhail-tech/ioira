@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ioira Watches - Premium Timepieces</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page-loader">
+        <div class="loader-bar"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="ioira Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="watches.html" class="active">Watches</a></li>
+                    <li><a href="clothing.html">Clothing</a></li>
+                    <li><a href="bracelets.html">Bracelets</a></li>
+                    <li><a href="rings.html">Rings</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>ioira Watches</h1>
+            <p>Where precision meets elegance</p>
+        </div>
+    </section>
+
+    <section class="collection">
+        <div class="container">
+            <h2>Our Watch Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="skeleton-loader">
+                        <div class="skeleton-image"></div>
+                        <div class="skeleton-text">
+                            <div class="skeleton-line"></div>
+                            <div class="skeleton-line"></div>
+                            <div class="skeleton-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chronos Collection</h3>
+                        <p class="price">$495</p>
+                        <p class="description">Swiss automatic movement, sapphire crystal, titanium case</p>
+                        <a href="#" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="skeleton-loader">
+                        <div class="skeleton-image"></div>
+                        <div class="skeleton-text">
+                            <div class="skeleton-line"></div>
+                            <div class="skeleton-line"></div>
+                            <div class="skeleton-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Aero Collection</h3>
+                        <p class="price">$395</p>
+                        <p class="description">Chronograph function, carbon fiber dial, ceramic bezel</p>
+                        <a href="#" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="skeleton-loader">
+                        <div class="skeleton-image"></div>
+                        <div class="skeleton-text">
+                            <div class="skeleton-line"></div>
+                            <div class="skeleton-line"></div>
+                            <div class="skeleton-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lumine Collection</h3>
+                        <p class="price">$595</p>
+                        <p class="description">Moon phase complication, rose gold accents, alligator strap</p>
+                        <a href="#" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="skeleton-loader">
+                        <div class="skeleton-image"></div>
+                        <div class="skeleton-text">
+                            <div class="skeleton-line"></div>
+                            <div class="skeleton-line"></div>
+                            <div class="skeleton-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vertex Collection</h3>
+                        <p class="price">$445</p>
+                        <p class="description">Diver's watch, 200m water resistance, luminous markers</p>
+                        <a href="#" class="btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Experience Timeless Precision</h2>
+            <p>Each ioir watch is engineered for those who appreciate the art of horology</p>
+            <a href="#" class="btn-primary">Explore All Watches</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="ioira Logo">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="watches.html">Watches</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bracelets.html">Bracelets</a></li>
+                        <li><a href="rings.html">Rings</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>info@ioira.com</p>
+                    <p>follow us:</p>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ioir. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page loader simulation
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('page-loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 300);
+            }, 1500);
+        });
+
+        // Skeleton loader replacement with actual content after delay
+        document.addEventListener('DOMContentLoaded', function() {
+            const skeletons = document.querySelectorAll('.skeleton-loader');
+            skeletons.forEach((skeleton, index) => {
+                setTimeout(() => {
+                    skeleton.innerHTML = `
+                        <img src="logo.png" alt="Watch Preview" class="category-img">
+                    `;
+                }, 800 + (index * 300));
+            });
+        });
+
+        // Add interactivity - hover effects on cards
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            });
+        });
+    </script>
+</body>
+</html>
